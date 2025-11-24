@@ -1,21 +1,4 @@
-#include <stdio.h>
-#include <stdlib.h>
 
-typedef struct field_of_ships {
-	char reference,attacked;
-} FOS;
-
-//verifica daca niste coordonate se afla in interiorul matricii
-int inmatrix(int si, int sj, int n, int m)
-{
-	if (si >= 0 && sj >= 0 &&  si < n && sj < m) {
-		return 1;
-	}
-	return 0;
-}
-
-//returneaza tipul navei pe baza numarului de patratele ocupate
-char *reverse_ship_type(int x)
 {
 	if (x == 1) {
 		char *aux = "Albacore";
